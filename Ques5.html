@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 10px;
+                max-width: 800px; 
+                 margin: auto; 
+                }
+         .gallery img {
+                  width: 100%; 
+                  height: auto; 
+                  border-radius: 8px; 
+                } 
+         @media (max-width: 600px) {
+          .gallery {
+              grid-template-columns: 1fr; 
+            }
+    }
+</style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="C:\Users\gorla\Downloads\4.image" alt="Image 1">
+        <img src="C:\Users\gorla\Downloads\1.image" alt="Image 2">
+        <img src="C:\Users\gorla\Downloads\5.images"alt="Image 3">
+        <img src="C:\Users\gorla\Downloads\3.image" alt="Image 4">
+    </div>
+</body>
+</html>
